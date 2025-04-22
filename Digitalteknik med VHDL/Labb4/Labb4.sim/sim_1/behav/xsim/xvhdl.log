@@ -1,0 +1,14 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Khale/OneDrive/Dokument/Digitalteknik med VHDL/Labb4/Labb4.sim/add4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'add4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Khale/OneDrive/Dokument/Digitalteknik med VHDL/Labb4/Labb4.sim/bit_and4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bit_add4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Khale/OneDrive/Dokument/Digitalteknik med VHDL/Labb4/Labb4.sim/bit_or4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bit_or4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Khale/OneDrive/Dokument/Digitalteknik med VHDL/Labb4/Labb4.srcs/sim_1/new/cpu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cpu'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Khale/OneDrive/Dokument/Digitalteknik med VHDL/Labb4/Labb4.sim/invrt4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'invrt4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Khale/OneDrive/Dokument/Digitalteknik med VHDL/Labb4/Labb4.sim/mul4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mul4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Khale/OneDrive/Dokument/Digitalteknik med VHDL/Labb4/Labb4.srcs/sim_1/new/cpu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cpu_tb'

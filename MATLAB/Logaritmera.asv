@@ -1,0 +1,50 @@
+% konsnter givna da
+q = 1.60e-19;      % Elektronens laddning [C]
+k = 1.38e-23;      % Boltzmanns konstant [J/K]
+T = 300;           % Temperatur [K]
+
+% Uppmätt data för ström och späning. (Tabellen)
+I = [7.53e-5 3.17e-4 1.07e-3 3.75e-3 1.35e-2 4.45e-2 1.75e-1 5.86e-1];
+U = [0.50 0.55 0.60 0.65 0.70 0.75 0.80 0.85];
+
+% Linjarisering:logaritmera strömvärdena
+log_I = log(I);
+
+% Plotta data för att visualisera förhållandet
+figure;
+subplot(1, 2, 1);
+plot(U, I, 'o');
+xlabel('Spänning, U [V]');
+ylabel('Ström, I [A]');
+title('Ursprunglig data');
+
+% Plotta linjäriserad data
+subplot(1, 2, 2);
+plot(U, log_I, 'o');
+xlabel('Spänning, U [V]');
+ylabel('ln(I)');
+title('Linjäriserad data');
+
+%Linjär regression för att hitta lutningen (slope) och interceptet
+coefficients = polyfit(U, log_I, 1);
+
+%Lutningen och interceptet
+slope = coefficients(1);
+ln_I0 = coefficients(2);
+
+% bestäm n med hjälp av lutningen (slope) 
+n = q / (slope * k * T);
+
+% Bestäm I0 från ln(I0)
+I0 = exp(ln_I0);
+
+% Visa resultat 
+fprintf('Värdet på n är: %.4f\n', n);
+fprintf('Värdet på I0 är: %.4e A\n', I0);
+
+% Plotta linjär regression
+hold on;
+U_fit = linspace (min(U), max(U), 100);
+log_I_fit = polyval(coefficients, U_fit);
+plot(U_fit, log_I_fit, '-r');
+legend('Data', 'Linjär regression');
