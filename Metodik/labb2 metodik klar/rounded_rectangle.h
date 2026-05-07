@@ -1,0 +1,17 @@
+#ifndef LAB2_ROUNDED_RECTANGLE_H
+#define LAB2_ROUNDED_RECTANGLE_H
+
+#include "rectangle.h"
+
+class rounded_rectangle : public rectangle
+{
+private:
+    double radius;
+
+public:
+    rounded_rectangle(const std::string& color, double width, double height, double radius);
+
+    double get_area() const override;
+};
+
+#endif
